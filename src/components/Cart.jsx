@@ -17,8 +17,8 @@ export function Cart() {
           <strong>{title}</strong> - ${price}
         </div>
         <footer>
-          <small onClick={addToCart}>Qty: {quantity}</small>
-          <button>+</button>
+          <small >Qty: {quantity}</small>
+          <button onClick={addToCart}>+</button>
         </footer>
       </li>
     );

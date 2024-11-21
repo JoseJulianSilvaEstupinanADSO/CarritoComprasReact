@@ -22,7 +22,8 @@ export function Products({ products }) {
                 <strong> {product.title} </strong> - ${product.price}
               </div>
               <div>
-                <button
+                <button className="btn-card"
+                  style={{ backgroundColor: isProductInCard ? "red" : "#09f" }}
                   onClick={() => {
                     isProductInCard
                       ? removeFromCart(product)
